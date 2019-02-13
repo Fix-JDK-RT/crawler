@@ -1,0 +1,277 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+Help Center > Asking
+I've thought better of my question; can I delete it?
+You might have had second thoughts about something you've posted. Maybe you don't want your coworkers to see that very specific question about job-hunting, or you realize you shouldn't have posted that proprietary code, or you don't want your friends to see that stupid mistake in your question. If nobody has answered yet, go ahead and delete it — nobody minds.
+If your question has good answers, though, it's not fair to have those answers removed along with your question: other users put effort into helping you and even if you no longer want the answers, somebody else might. This is why the system prevents you from deleting answered questions most of the time.
+But there are some other things you can do:
+If your question is unnecessarily specific, edit to generalize it. Do you really need to name specific employers, vendors, or other details? Is your location actually important? Can you make the code more generic and rename some variables? Don't invalidate existing answers and don't make it so vague as to be unanswerable, but if you could be one of thousands of people who could have asked that question, people probably won't know it's you. In almost all cases, an edit should be all you need.
+If you really can't see a way to salvage the question while removing identifying details, and none of the answers are highly upvoted, and especially if the question is closed, you can use a flag to request that moderators delete it. If there's not much at stake, they might do that for you.
+If you have posted something super-sensitive like a password or an API key, edit it out and then use a flag to ask moderators to redact it from the revision history. Be specific about what needs to go and (if it's not obvious) why. Redaction requests must be approved by two moderators, so there will be a delay. If the question is closed, moderators might decide to just delete it instead. See this post for some more specific guidance on preparing a post for redaction without breaking it or its answers.
+If the question is good, there's nothing sensitive in it, and the problem is just that your name is on it, you might be able to have it disassociated from your account. This is not true anonymity; anything you post on the Internet lives forever somewhere.  Requests are reviewed, which takes time. If your request is approved, it cannot be reversed later.
+While redaction and disassociation are permitted, they are meant to be rare exceptions, not routine actions. A pattern of posting rashly and requesting deletion, redaction, or disassociation, over and over again, could lead to suspension. Post as if everything you write will be publicly visible forever.
+Vandalizing or excessive deletion of useful posts may trigger an alert within the system, and prompt action from the moderation team. Please be respectful of the efforts of others: avoid invalidating their work or creating a nuisance.
+None of this can be used to lift a posting block by the system — if you are blocked from posting new questions or answers, please refer to Why are questions no longer being accepted from my account? and Why are answers no longer being accepted from my account? for guidance on how to lift the block. 
+Asking
+What topics can I ask about here?
+What types of questions should I avoid asking?
+What does it mean if a question is "closed" or "on hold"?
+Why are some questions marked as duplicate?
+I've thought better of my question; can I delete it?
+How do I ask a good question?
+Why and how are some questions deleted?
+How to create a Minimal, Complete, and Verifiable example
+Why are questions no longer being accepted from my account?
+What should I do if no one answers my question?
+What are tags, and how should I use them?
+Why is the system asking me to wait a day or more before asking another question?
+Why do I see a message that my question does not meet quality standards?
+What if I disagree with the closure of a question? How can I reopen it?
+What should I do when someone answers my question?
+How to Ask Questions in Private Beta
+Privileges
+Badges
+Our model
+Reputation & Moderation
+Answering
+Stack Overflow Jobs
+My Account
+Stack Overflow
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Products
+Teams
+Talent
+Engagement
+Enterprise
+Company
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+Stack Exchange Network
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Stack Overflow
+Server Fault
+Super User
+Web Applications
+Ask Ubuntu
+Webmasters
+Game Development
+TeX - LaTeX
+Software Engineering
+Unix & Linux
+Ask Different (Apple)
+WordPress Development
+Geographic Information Systems
+Electrical Engineering
+Android Enthusiasts
+Information Security
+Database Administrators
+Drupal Answers
+SharePoint
+User Experience
+Mathematica
+Salesforce
+ExpressionEngine® Answers
+Stack Overflow em Português
+Blender
+Network Engineering
+Cryptography
+Code Review
+Magento
+Software Recommendations
+Signal Processing
+Emacs
+Raspberry Pi
+Stack Overflow на русском
+Programming Puzzles & Code Golf
+Stack Overflow en español
+Ethereum
+Data Science
+Arduino
+Bitcoin
+
+                            more (30)
+                        
+Photography
+Science Fiction & Fantasy
+Graphic Design
+Movies & TV
+Music: Practice & Theory
+Worldbuilding
+Seasoned Advice (cooking)
+Home Improvement
+Personal Finance & Money
+Academia
+Law
+
+                            more (15)
+                        
+English Language & Usage
+Skeptics
+Mi Yodeya (Judaism)
+Travel
+Christianity
+English Language Learners
+Japanese Language
+Arqade (gaming)
+Bicycles
+Role-playing Games
+Anime & Manga
+Puzzling
+Motor Vehicle Maintenance & Repair
+
+                            more (33)
+                        
+MathOverflow
+Mathematics
+Cross Validated (stats)
+Theoretical Computer Science
+Physics
+Chemistry
+Biology
+Computer Science
+Philosophy
+
+                            more (10)
+                        
+Meta Stack Exchange
+Stack Apps
+API
+Data
+Area 51
+Blog
+Facebook
+Twitter
+LinkedIn
+
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0
+                            with attribution required.
+                    rev 2019.2.13.32891
+StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })
+Stack Overflow works best with JavaScript enabled
+            
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ]
+                });
+
+
+
+
+                    StackExchange.ga.setDimension('dimension3', 'Help/SlugRouter');
+
+
+                StackExchange.ga.trackPageView();
+            });
+            
+/**/
+            
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+

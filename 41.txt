@@ -1,0 +1,87 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+Help Center > Asking
+What topics can I ask about here?
+Stack Overflow is for professional and enthusiast programmers, people who write code because they love it. We feel the best Stack Overflow questions have a bit of source code in them, but if your question generally covers…
+a specific programming problem, or
+a software algorithm, or
+software tools commonly used by programmers; and is
+a practical, answerable problem that is unique to software development
+… then you’re in the right place to ask your question!
+Please look around to see if your question has been asked before. It’s also OK to ask and answer your own question. Questions which are too broad, unclear, incomplete or primarily opinion-based may be put on hold by the community until they are improved.  
+Click here for tips on how to ask good questions that are likely to be well-received by the community and attract good answers.
+Some questions are still off-topic, even if they fit into one of the categories listed above:
+Questions seeking debugging help ("why isn't this code working?") must include the desired behavior, a specific problem or error and the shortest code necessary to reproduce it in the question itself. Questions without a clear problem statement are not useful to other readers. See: How to create a Minimal, Complete, and Verifiable example.
+Questions about a problem that can no longer be reproduced or that was caused by a simple typographical error. While similar questions may be on-topic here, these are often resolved in a manner unlikely to help future readers. This can often be avoided by identifying and closely inspecting the shortest program necessary to reproduce the problem before posting.
+Questions asking for homework help must include a summary of the work you've done so far to solve the problem, and a description of the difficulty you are having solving it.
+Questions asking us to recommend or find a book, tool, software library, tutorial or other off-site resource are off-topic for Stack Overflow as they tend to attract opinionated answers and spam. Instead, describe the problem and what has been done so far to solve it.
+Questions about general computing hardware and software are off-topic for Stack Overflow unless they directly involve tools used primarily for programming. 
+Questions on professional server, networking, or related infrastructure administration are off-topic for Stack Overflow unless they directly involve programming or programming tools. 
+If your question is not specifically on-topic for Stack Overflow, it may be on topic for another Stack Exchange site. If your question would be of interest to …

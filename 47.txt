@@ -1,0 +1,79 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+Help Center > Our model
+Expected Behavior
+We’re excited to have you here. Here are guidelines for participating in the network. 
+Be nice.
+Whether you've come to ask questions, or to generously share what you know, remember that we’re all here to learn, together. Be welcoming and patient, especially with those who may not know everything you do.
+For specific guidelines, see the Code of Conduct.
+Be honest.
+Above all, be honest. If you see misinformation, vote it down. Add comments indicating what, specifically, is wrong. Provide better answers of your own. Last but not least, edit and improve the existing questions and answers! By doing these things, you are helping keep Stack Exchange a great place to share knowledge of our craft.
+Do not use signature, taglines, or greetings.
+Every post you make is already “signed” with your standard user card, which links directly back to your user page. If you use an additional signature or tagline, it will be removed to reduce noise in the questions and answers. 

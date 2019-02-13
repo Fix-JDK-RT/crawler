@@ -1,0 +1,275 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+Help Center > Asking
+Why are some questions marked as duplicate?
+The fundamental goal of closing duplicate questions is to help people find the right answer by getting all of those answers in one place. This does not mean that every duplicate will immediately be closed; we love (some) dupes. There are many ways to ask the same question, and a user might not be able to find the answer if they're asking it a different way.
+Marking a question as duplicate is part of the question closing procedure, except when a question is closed as duplicate, the title is appended with "[Duplicate]" rather than "[Closed]".
+Moderators and anyone with 3000 reputation may vote to close a question as a duplicate by clicking the "close" link and entering in the URL or title of the question they believe it to be a duplicate of.
+It takes 5 close votes to reach the closing threshold. (A question can be closed as duplicate with a single vote from a moderator or a user who has earned a gold tag badge in one of that question's current tags, unless that user participated in editing the tags.) 
+You may cast up to 50 close votes per day.
+A vote to close as duplicate will automatically post a comment with the duplicate link if no one else had voted for that particular duplicate. The user who cast the vote is the owner of the comment and can edit or delete it like any other comment. The original question generally must have an answer; questions may only be marked as duplicates of unanswered questions on meta sites, when the questions share the same author, or when closed by a moderator.
+Once the question is closed as a duplicate, these comments are deleted and the duplicate information is automatically edited into the question itself. Some duplicate questions may eventually be deleted, but often they are left as a signpost pointing people towards the canonical answer to that question.
+ If you see a question and do not agree that it truly is a duplicate, edit it to highlight the differences, then try to get it reopened by casting a reopen vote.
+Asking
+What topics can I ask about here?
+What types of questions should I avoid asking?
+What does it mean if a question is "closed" or "on hold"?
+Why are some questions marked as duplicate?
+I've thought better of my question; can I delete it?
+How do I ask a good question?
+Why and how are some questions deleted?
+How to create a Minimal, Complete, and Verifiable example
+Why are questions no longer being accepted from my account?
+What should I do if no one answers my question?
+What are tags, and how should I use them?
+Why is the system asking me to wait a day or more before asking another question?
+Why do I see a message that my question does not meet quality standards?
+What if I disagree with the closure of a question? How can I reopen it?
+What should I do when someone answers my question?
+How to Ask Questions in Private Beta
+Privileges
+Badges
+Our model
+Reputation & Moderation
+Answering
+Stack Overflow Jobs
+My Account
+Stack Overflow
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Products
+Teams
+Talent
+Engagement
+Enterprise
+Company
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+Stack Exchange Network
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Stack Overflow
+Server Fault
+Super User
+Web Applications
+Ask Ubuntu
+Webmasters
+Game Development
+TeX - LaTeX
+Software Engineering
+Unix & Linux
+Ask Different (Apple)
+WordPress Development
+Geographic Information Systems
+Electrical Engineering
+Android Enthusiasts
+Information Security
+Database Administrators
+Drupal Answers
+SharePoint
+User Experience
+Mathematica
+Salesforce
+ExpressionEngine® Answers
+Stack Overflow em Português
+Blender
+Network Engineering
+Cryptography
+Code Review
+Magento
+Software Recommendations
+Signal Processing
+Emacs
+Raspberry Pi
+Stack Overflow на русском
+Programming Puzzles & Code Golf
+Stack Overflow en español
+Ethereum
+Data Science
+Arduino
+Bitcoin
+
+                            more (30)
+                        
+Photography
+Science Fiction & Fantasy
+Graphic Design
+Movies & TV
+Music: Practice & Theory
+Worldbuilding
+Seasoned Advice (cooking)
+Home Improvement
+Personal Finance & Money
+Academia
+Law
+
+                            more (15)
+                        
+English Language & Usage
+Skeptics
+Mi Yodeya (Judaism)
+Travel
+Christianity
+English Language Learners
+Japanese Language
+Arqade (gaming)
+Bicycles
+Role-playing Games
+Anime & Manga
+Puzzling
+Motor Vehicle Maintenance & Repair
+
+                            more (33)
+                        
+MathOverflow
+Mathematics
+Cross Validated (stats)
+Theoretical Computer Science
+Physics
+Chemistry
+Biology
+Computer Science
+Philosophy
+
+                            more (10)
+                        
+Meta Stack Exchange
+Stack Apps
+API
+Data
+Area 51
+Blog
+Facebook
+Twitter
+LinkedIn
+
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0
+                            with attribution required.
+                    rev 2019.2.13.32891
+StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })
+Stack Overflow works best with JavaScript enabled
+            
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ]
+                });
+
+
+
+
+                    StackExchange.ga.setDimension('dimension3', 'Help/SlugRouter');
+
+
+                StackExchange.ga.trackPageView();
+            });
+            
+/**/
+            
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+
