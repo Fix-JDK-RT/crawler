@@ -1,0 +1,267 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+Help Center > My Account
+How do I delete my account?
+User deletion is irreversible! By sending this request, your votes will be revoked, and all of your content will be made anonymous.
+You should see a Delete Profile option on your user profile by clicking the Edit Profile & Settings link at the top of your profile page:
+Visit that page and read through the information there. Once you've done so,
+ check the box to indicate that you understand the implications of deleting your profile and then click the Delete Profile button.
+If you have never posted or voted more than once on your profile, it will be immediately deleted. Otherwise, you will be scheduled for deletion. During that time, you can cancel the deletion request by visiting your profile and clicking the cancel link in the banner at the top. Otherwise, it will be deleted after 24 hours.
+Asking
+Privileges
+Badges
+Our model
+Reputation & Moderation
+Answering
+Stack Overflow Jobs
+My Account
+I accidentally created two accounts; how do I merge them?
+How do I add or remove login credentials from my account?
+I lost my password; how do I reset it?
+How do I delete my account?
+What is the license for the content I post?
+How do I report a possible security vulnerability?
+Why has my post been blocked due to 'spam and abuse from my network'?
+Why have I been limited to one question per week?
+Why do I see the message “OpenId endpoint not found” when I try to log in?
+How do I create an account?
+Why should I create an account?
+Stack Overflow
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Products
+Teams
+Talent
+Engagement
+Enterprise
+Company
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+Stack Exchange Network
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Stack Overflow
+Server Fault
+Super User
+Web Applications
+Ask Ubuntu
+Webmasters
+Game Development
+TeX - LaTeX
+Software Engineering
+Unix & Linux
+Ask Different (Apple)
+WordPress Development
+Geographic Information Systems
+Electrical Engineering
+Android Enthusiasts
+Information Security
+Database Administrators
+Drupal Answers
+SharePoint
+User Experience
+Mathematica
+Salesforce
+ExpressionEngine® Answers
+Stack Overflow em Português
+Blender
+Network Engineering
+Cryptography
+Code Review
+Magento
+Software Recommendations
+Signal Processing
+Emacs
+Raspberry Pi
+Stack Overflow на русском
+Programming Puzzles & Code Golf
+Stack Overflow en español
+Ethereum
+Data Science
+Arduino
+Bitcoin
+
+                            more (30)
+                        
+Photography
+Science Fiction & Fantasy
+Graphic Design
+Movies & TV
+Music: Practice & Theory
+Worldbuilding
+Seasoned Advice (cooking)
+Home Improvement
+Personal Finance & Money
+Academia
+Law
+
+                            more (15)
+                        
+English Language & Usage
+Skeptics
+Mi Yodeya (Judaism)
+Travel
+Christianity
+English Language Learners
+Japanese Language
+Arqade (gaming)
+Bicycles
+Role-playing Games
+Anime & Manga
+Puzzling
+Motor Vehicle Maintenance & Repair
+
+                            more (33)
+                        
+MathOverflow
+Mathematics
+Cross Validated (stats)
+Theoretical Computer Science
+Physics
+Chemistry
+Biology
+Computer Science
+Philosophy
+
+                            more (10)
+                        
+Meta Stack Exchange
+Stack Apps
+API
+Data
+Area 51
+Blog
+Facebook
+Twitter
+LinkedIn
+
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0
+                            with attribution required.
+                    rev 2019.2.13.32891
+StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })
+Stack Overflow works best with JavaScript enabled
+            
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ]
+                });
+
+
+
+
+                    StackExchange.ga.setDimension('dimension3', 'Help/SlugRouter');
+
+
+                StackExchange.ga.trackPageView();
+            });
+            
+/**/
+            
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+

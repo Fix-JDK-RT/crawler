@@ -1,0 +1,289 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+Help Center > Reputation & Moderation
+What is a locked post?
+A post which is "locked" cannot be modified in any way. Locking prevents...
+...voting on the post (including close/reopen votes for questions)
+...editing
+...commenting
+...answering (for questions)
+...flagging (though "in need of moderator intervention" flags are still allowed, except in the case of Historical Significance locks - see below)
+Who can lock a post?
+Site moderators can apply specific types of locks to questions and answers. 
+Also, the system itself will lock posts in certain situations:
+if the post is deleted via "spam" or "abusive" flags.
+if the post is migrated to another site.
+if the post was migrated to the current site, and then rejected.
+if a question was merged into another question, the answers will be moved and the source question will be locked.
+How long do posts stay locked?
+This depends on why it was locked to begin with. 
+When a moderator locks a post they're required to select how long the lock should remain in place. The options are: 1 hour, 1 day, 1 week, permanent. At the end of this time, the system will automatically unlock it.
+When the system locks a post it stays locked indefinitely - only a moderator can unlock it. 
+A moderator can manually unlock a locked post at any time if they deem it necessary.
+When should a post be locked?
+As a general rule, temporary locks should be used whenever modifications to a post are causing serious problems on the site. For example:
+Edit wars
+Extended bickering in comments (but see: a guide to moderating comments)
+A controversial post that is under discussion on meta
+Permanent locks should almost never be used, with the exception of those imposed by the system itself. There are two exceptions:
+An extremely popular question which is now considered inappropriate for the site may be locked for "Historical Significance": this alters the appearance of the question, automatically locks all answers as well, and disables flagging completely. This lock should be reserved for cases where a cherished cultural artifact would otherwise be deleted; do not use it for any other purpose.
+A "wiki" is a question whose answers can be edited by low-reputation users, attributed to multiple authors, and do not grant reputation to the original author. They're occasionally useful in cases where information must be compiled by multiple authors (for example, a list of resources or documentation for the site itself); in these cases, locking the question both prevents it from being closed and prevents further answers from being added.
+See also:
+What is a "locked" post? on Meta Stack Exchange
+What is a historical lock, and what is it used for? on Meta Stack Exchange
+Advanced search options
+Asking
+Privileges
+Badges
+Our model
+Reputation & Moderation
+Who are the site moderators, and what is their role here?
+Why is voting important?
+What is reputation? How do I earn (and lose) it?
+What are declined flags, and what should I do about them?
+What is a locked post?
+What is a bounty? How can I start one?
+Why do I have a reputation change on my reputation page that says "voting corrected"?
+Why do I have a reputation change on my reputation page that says 'User was removed'?
+Answering
+Stack Overflow Jobs
+My Account
+Stack Overflow
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Products
+Teams
+Talent
+Engagement
+Enterprise
+Company
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+Stack Exchange Network
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Stack Overflow
+Server Fault
+Super User
+Web Applications
+Ask Ubuntu
+Webmasters
+Game Development
+TeX - LaTeX
+Software Engineering
+Unix & Linux
+Ask Different (Apple)
+WordPress Development
+Geographic Information Systems
+Electrical Engineering
+Android Enthusiasts
+Information Security
+Database Administrators
+Drupal Answers
+SharePoint
+User Experience
+Mathematica
+Salesforce
+ExpressionEngine® Answers
+Stack Overflow em Português
+Blender
+Network Engineering
+Cryptography
+Code Review
+Magento
+Software Recommendations
+Signal Processing
+Emacs
+Raspberry Pi
+Stack Overflow на русском
+Programming Puzzles & Code Golf
+Stack Overflow en español
+Ethereum
+Data Science
+Arduino
+Bitcoin
+
+                            more (30)
+                        
+Photography
+Science Fiction & Fantasy
+Graphic Design
+Movies & TV
+Music: Practice & Theory
+Worldbuilding
+Seasoned Advice (cooking)
+Home Improvement
+Personal Finance & Money
+Academia
+Law
+
+                            more (15)
+                        
+English Language & Usage
+Skeptics
+Mi Yodeya (Judaism)
+Travel
+Christianity
+English Language Learners
+Japanese Language
+Arqade (gaming)
+Bicycles
+Role-playing Games
+Anime & Manga
+Puzzling
+Motor Vehicle Maintenance & Repair
+
+                            more (33)
+                        
+MathOverflow
+Mathematics
+Cross Validated (stats)
+Theoretical Computer Science
+Physics
+Chemistry
+Biology
+Computer Science
+Philosophy
+
+                            more (10)
+                        
+Meta Stack Exchange
+Stack Apps
+API
+Data
+Area 51
+Blog
+Facebook
+Twitter
+LinkedIn
+
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0
+                            with attribution required.
+                    rev 2019.2.13.32891
+StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })
+Stack Overflow works best with JavaScript enabled
+            
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ]
+                });
+
+
+
+
+                    StackExchange.ga.setDimension('dimension3', 'Help/SlugRouter');
+
+
+                StackExchange.ga.trackPageView();
+            });
+            
+/**/
+            
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+

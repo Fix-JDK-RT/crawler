@@ -1,0 +1,575 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+.everyoneloves__top-leaderboard:empty,.everyoneloves__mid-leaderboard:empty,.everyoneloves__bot-mid-leaderboard:empty{                height:90px;width:728px;box-sizing:border-box;
+}
+ 
+Reference - What does this regex mean?
+
+            Ask Question
+        
+52
+791
+What is this?
+This is a collection of common Q&A. This is also a Community Wiki, so everyone is invited to participate in maintaining it.
+Why is this?
+regex is suffering from give me ze code type of questions and poor answers with no explanation. This reference is meant to provide links to quality Q&A.
+What's the scope?
+This reference is meant for the following languages: php, perl, javascript, python, ruby, java, .net.
+This might be too broad, but these languages share the same syntax. For specific features there's the tag of the language behind it, example:
+What are regular expression Balancing Groups? .net
+regex
+share
+edited Oct 31 '18 at 16:52
+ 
+
+            community wiki
+        
+
+        18 revs, 13 users 32%HamZa
+ locked by Robert Harvey♦ Apr 8 '14 at 18:46
+This question's answers are a collaborative effort: if you see something that can be improved, just edit the answer to improve it! No additional answers can be added hereRead more about locked posts here.
+1
+I created a meta discussion, everyone is invited >>>
+                
+                    – HamZa
+Apr 8 '14 at 18:26
+comments disabled on deleted / locked posts / reviews | 
+ 
+
+                                1 Answer
+                            1
+
+            active
+
+            oldest
+
+            votes
+746
+The Stack Overflow Regular Expressions FAQ
+Online tutorials
+RegexOne
+Regular Expressions Info
+Quantifiers
+Zero-or-more: *:greedy, *?:reluctant, *+:possessive
+One-or-more: +:greedy, +?:reluctant, ++:possessive
+?:optional (zero-or-one)
+Min/max ranges (all inclusive): {n,m}:between n & m, {n,}:n-or-more, {n}:exactly n
+Differences between greedy, reluctant (a.k.a. "lazy", "ungreedy") and possessive quantifier:
+Greedy vs. Reluctant vs. Possessive Quantifiers
+In-depth discussion on the differences between greedy versus non-greedy
+What's the difference between {n} and {n}?
+Can someone explain Possessive Quantifiers to me? php, perl, java, ruby
+Emulating possessive quantifiers .net
+Non-Stack Overflow references: From Oracle, regular-expressions.info
+Character Classes
+What is the difference between square brackets and parentheses?
+[...]: any one character, [^...]: negated/any character but
+[^] matches any one character including newlines javascript
+[\w-[\d]] / [a-z-[qz]]: set subtraction .net, xml-schema, xpath, JGSoft
+[\w&&[^\d]]: set intersection java, ruby 1.9+
+[[:alpha:]]:POSIX character classes
+Why do [^\\D2], [^[^0-9]2], [^2[^0-9]] get different results in Java? java
+Shorthand:
+Digit: \d:digit, \D:non-digit
+Word character (Letter, digit, underscore): \w:word character, \W:non-word character
+Whitespace: \s:whitespace, \S:non-whitespace
+Unicode categories (\p{L}, \P{L}, etc.)
+Escape Sequences
+Horizontal whitespace: \h:space-or-tab, \t:tab
+Newlines:
+\r, \n:carriage return and line feed
+\R:generic newline php
+Negated whitespace sequences: \H:Non horizontal whitespace character, \V:Non vertical whitespace character, \N:Non line feed character pcre php5 java-8
+Other: \v:vertical tab, \e:the escape character
+Anchors
+^:start of line/input, \b:word boundary, and \B:non-word boundary, $:end of line/input
+\A:start of input, \Z:end of input php, perl, ruby
+\z:the very end of input (\Z in Python) .net, php, pcre, java, ruby, icu, swift, objective-c
+\G:start of match php, perl, ruby
+(Also see "Flavor-Specific Information → Java → The functions in Matcher")
+Groups
+(...):capture group, (?:):non-capture group
+Why is my repeating capturing group only capturing the last match?
+\1:backreference and capture-group reference, $1:capture group reference
+What's the meaning of a number after a backslash in a regular expression?
+\g<1>123:How to follow a numbered capture group, such as \1, with a number?: python
+What does a subpattern (?i:regex) mean?
+What does the 'P' in (?P<group_name>regexp) mean?
+(?>):atomic group or independent group,  (?|):branch reset
+Equivalent of branch reset in .NET/C# .net
+Named capture groups:
+General named capturing group reference at regular-expressions.info
+java: (?<groupname>regex): Overview and naming rules (Non-Stack Overflow links)
+Other languages: (?P<groupname>regex) python, (?<groupname>regex) .net, (?<groupname>regex) perl, (?P<groupname>regex) and (?<groupname>regex) php
+Lookarounds
+Lookaheads: (?=...):positive, (?!...):negative
+Lookbehinds: (?<=...):positive, (?<!...):negative (not supported by javascript)
+Lookbehind limits in:
+Lookbehinds need to be constant-length php, perl, python, ruby
+Lookarounds of limited length {0,n} java
+Variable length lookbehinds are allowed .net
+Lookbehind alternatives:
+Using \K php, perl (Flavors that support \K)
+Alternative regex module for Python python
+The hacky way
+JavaScript negative lookbehind equivalents External link
+Modifiers
+Most flavors: g:global, i:case-insensitive, u:unicode, x:whitespace-extended
+c:current position perl  e:expression php perl  o:once ruby
+m:multiline php perl python javascript .net java, m:(non)multiline ruby
+s:single line (not supported by javascript or ruby), s workaround javascript
+S:study php  U:ungreedy php r
+How to convert preg_replace e to preg_replace_callback?
+What are inline modifiers?
+What is '?-mix' in a Ruby Regular Expression
+Other:
+|:alternation (OR) operator, .:any character, [.]:literal dot character
+What special characters must be escaped?
+Control verbs (php and perl): (*PRUNE), (*SKIP), (*FAIL) and (*F)
+php only: (*BSR_ANYCRLF)
+Recursion (php and perl): (?R), (?0) and (?1), (?-1), (?&groupname)
+Common Tasks
+Get a string between two curly braces: {...}
+Match (or replace) a pattern except in situations s1, s2, s3...
+How do I find all YouTube video ids in a string using a regex?
+Validation:
+Internet: email addresses, URLs (host/port: regex and non-regex alternatives), passwords
+Numeric: a number, min-max ranges (such as 1-31), phone numbers, date
+Parsing HTML with regex: See "General Information > When not to use Regex"
+Advanced Regex-Fu
+Strings and numbers:
+Regular expression to match a line that doesn't contain a word?
+How does this PCRE pattern detect palindromes?
+Match strings whose length is a fourth power
+How does this regex find triangular numbers?
+How to determine if a number is a prime with regex?
+How to match the middle character in a string with regex?
+Other:
+How can we match a^n b^n with Java regex?
+Match nested brackets
+Using a recursive pattern php, perl
+Using balancing groups .net
+“Vertical” regex matching in an ASCII “image”
+List of highly up-voted regex questions on Code Golf
+How to make two quantifiers repeat the same number of times?
+An impossible-to-match regular expression: (?!a)a
+Match/delete/replace this except in contexts A, B and C
+Match nested brackets with regex without using recursion or balancing groups?
+Flavor-Specific Information
+(Except for those marked with *, this section contains non-Stack Overflow links.)
+Java
+Official documentation: Pattern Javadoc, Oracle's regular expressions tutorial
+The differences between functions in java.util.regex.Matcher:
+matches()): The match must be anchored to both input-start and -end
+find()): A match may be anywhere in the input string (substrings)
+lookingAt(): The match must be anchored to input-start only
+(For anchors in general, see the section "Anchors")
+The only java.lang.String functions that accept regular expressions: matches(s), replaceAll(s,s), replaceFirst(s,s), split(s), split(s,i)
+*An (opinionated and) detailed discussion of the disadvantages of and missing features in java.util.regex
+.NET
+How to read a .NET regex with look-ahead, look-behind, capturing groups and back-references mixed together?
+Official documentation:
+Boost regex engine: General syntax, Perl syntax (used by TextPad, Sublime Text, UltraEdit, ...???)
+JavaScript 1.5 general info and RegExp object
+.NET  MySQL  Oracle  Perl5 version 18.2
+PHP: pattern syntax, preg_match
+Python: Regular expression operations, search vs match, how-to
+Splunk: regex terminology and syntax and regex command
+Tcl: regex syntax, manpage, regexp command
+Visual Studio Find and Replace
+General information
+(Links marked with * are non-Stack Overflow links.)
+Other general documentation resources: Learning Regular Expressions, *Regular-expressions.info, *Wikipedia entry, *RexEgg, Open-Directory Project
+DFA versus NFA
+Generating Strings matching regex
+Books: Jeffrey Friedl's Mastering Regular Expressions
+When to not use regular expressions:
+Some people, when confronted with a problem, think "I know, I'll use regular expressions." Now they have two problems. (blog post written by Stack Overflow's founder)*
+Do not use regex to parse HTML:
+Don't.  Please, just don't
+Well, maybe...if you're really determined (other answers in this question are also good)
+Examples of regex that can cause regex engine to fail
+Why does this regular expression kill the Java regex engine?
+Tools: Testers and Explainers
+(This section contains non-Stack Overflow links.)
+Online (* includes replacement tester, + includes split tester):
+Debuggex (Also has a repository of useful regexes) javascript, python, pcre
+*Regular Expressions 101 php, pcre, python, javascript
+Regex Pal, regular-expressions.info javascript
+Rubular ruby  RegExr  Regex Hero dotnet
+*+ regexstorm.net .net
+*RegexPlanet: Java java, Go go, Haskell haskell, JavaScript javascript, .NET dotnet, Perl perl php PCRE php, Python python, Ruby ruby, XRegExp xregexp
+freeformatter.com xregexp
+*+regex.larsolavtorvik.com php PCRE and POSIX, javascript
+Refiddle javascript ruby .net
+Offline:
+Microsoft Windows: RegexBuddy (analysis), RegexMagic (creation), Expresso (analysis, creation, free)
+share 
+edited Sep 16 '18 at 11:54
+ 
+
+            community wiki
+        
+
+        139 revs, 36 users 25%aliteralmind
+add a comment | 
+ 
+
+Not the answer you're looking for?                            Browse other questions tagged regex  or ask your own question.                        
+asked
+4 years, 10 months ago
+viewed
+89,699 times
+active
+3 months ago
+;try{(function(a){function b(a){return'string'==typeof a?document.getElementById(a):a}function c(a){return a=b(a),!!a&&'none'===getComputedStyle(a).display}function d(a){return!c(a)}function e(a){return!!a}function f(a){return /^\s*$/.test(b(a).innerHTML)}function g(a){var b=a.style;b.height=b.maxHeight=b.minHeight='auto',b.display='none',[].forEach.call(a.children,g)}function h(a,b){var c;return function(){return a&&(c=a.call(b||this,arguments),a=null),c}}function i(a){var b=document.createElement('script');b.src=a,document.body.appendChild(b)}function j(a){return k([],a)}function k(a,b){return a.push=function(a){return b(),delete this.push,this.push(a)},a}function l(){try{return!new Function('return async()=>{};')}catch(a){return!0}}function m(){return'undefined'!=typeof googletag&&!!googletag.apiReady}function n(){m()||(googletag={cmd:j(A)})}function o(){var a=document.createElement('div');a.className='adsbox',a.id='clc-abd',a.style.position='absolute',a.style.pointerEvents='none',a.innerHTML='&nbsp;',document.body.appendChild(a)}function p(a){var b=a.serviceName,c=a.slot,d=a.lineItemId;try{var e=c.getSlotElementId(),f=[];e||f.push('id=0');var h=document.getElementById(e);if(!e||h?h.hasAttribute('data-clc-stalled')&&f.push('st=1'):f.push('el=0'),0!==f.length)return void B(f.join('&'));-1===x.dh.indexOf(d)?h.setAttribute('data-clc-prefilled','true'):g(h),h.setAttribute('data-clc-ready','true')}catch(a){var i=document.querySelector('#dfp-tsb, #dfp-isb, #clc-tsb');i&&i.setAttribute('data-clc-ready','true'),B('e=1')}}function q(){return Object.keys(F.ids)}function r(a){var b=F.ids[a],c=F.slots[b];'function'==typeof c&&(c=c(a));return{path:'/'+C+'/'+E+'/'+b+'/'+D,sizes:c,zone:b}}function s(a){return!(clc.collapse&&void 0!==clc.collapse[a])||!!clc.collapse[a]}function t(a,b){'dfp-isb'===a&&b.setTargeting('Sidebar',['Inline']),'dfp-tsb'===a&&b.setTargeting('Sidebar',['Right']);var c=r(a),d=c.path,e=c.sizes,f=c.zone,g=googletag.defineSlot(d,e,a);s(f)&&g.setCollapseEmptyDiv(!0,!0),g.addService(b),!1}function u(b){var c=a.dfp&&a.dfp.targeting||{};Object.keys(c).forEach(function(a){b.setTargeting(a,c[a])})}function v(a){var g=a.map(b).filter(e);return{eligible:g.filter(f).filter(d).map(function(a){return a.id}),ineligible:g.filter(c)}}function w(b){if(void 0===b&&(b=q()),!m())return n(),void googletag.cmd.push(function(){return w(b)});var c=v(b),d=c.eligible,e=c.ineligible;if(e.forEach(g),0!==d.length){o(),googletag.destroySlots();var f=googletag.pubads();f.enableSingleRequest(),a.sreEvent||(f.addEventListener('slotRenderEnded',p),a.sreEvent=!0),u(f),d.forEach(function(a){return t(a,f)}),googletag.enableServices(),d.forEach(function(a){googletag.display(a)})}}var x=function(a){for(var b=[],c=1;c<arguments.length;c++)b[c-1]=arguments[c];for(var d,e=0,f=b;e<f.length;e++)for(var g in d=f[e],d)a[g]=d[g];return a}({"lib":"https://cdn.sstatic.net/clc/clc.min.js?v=d926a9d0eedc","style":"https://cdn.sstatic.net/clc/styles/clc.min.css?v=768595a6d237","u":"https://clc.stackoverflow.com/markup.js","wa":true,"kt":2000,"tto":true,"h":"clc.stackoverflow.com","allowed":"^(((talent\\.)?stackoverflow)|(blog\\.codinghorror)|(serverfault|askubuntu)|([^\\.]+\\.stackexchange))\\.com$","wv":true,"al":false,"dh":[4385506061,4386578282,4386579572]},a.options||{}),y=h(function(){var a=x.lib;l()&&(a=a.replace(/(\.min)?\.js(\?v=[0-9a-fA-F]+)?$/,'.ie$1.js$2')),i(a)}),z=a.cmd||[];Array.isArray(z)&&(0<z.length?y():k(z,y));var A=h(function(){i('https://www.googletagservices.com/tag/js/gpt.js')}),B=function(a){new Image().src='https://'+x.h+'/stalled.gif?'+a},C='248424177',D=/^\/tags\//.test(location.pathname)||/^\/questions\/tagged\//.test(location.pathname)?'tag-pages':'question-pages',E=location.hostname;var F={slots:{lb:[[728,90]],mlb:[[728,90]],smlb:[[728,90]],bmlb:[[728,90]],sb:function(a){return'dfp-tsb'===a?[[300,250],[300,600]]:[[300,250]]},"tag-sponsorship":[[730,135]],"mobile-below-question":[[320,50],[300,250]]},ids:{"dfp-tlb":'lb',"dfp-mlb":'mlb',"dfp-smlb":'smlb',"dfp-bmlb":'bmlb',"dfp-tsb":'sb',"dfp-isb":'sb',"dfp-tag":'tag-sponsorship',"dfp-m-aq":'mobile-below-question',"clc-tlb":'lb',"clc-mlb":'mlb',"clc-smlb":'smlb',"clc-bmlb":'bmlb',"clc-tsb":'sb'}};(function(){var b=x.al;b&&z.push(function(){return a.load()})})(),n(),a.dfp={load:w},a.options=x,a.cmd=z})(this.clc=this.clc||{})}catch(a){window.console.error(a)} 
+                var clc = clc || {};
+                clc.collapse = { sb: !0,'tag-sponsorship':!0,lb:!1,mlb:!1,smlb:!1,bmlb:!1,'mobile-below-question':!0};
+                clc.cmd = clc.cmd || [];
+                clc.cmd.push(function () { window.clc_request='AjJ3MdtcktYIAAAAABIAXgECAAAAAgAAAAAHAAAAfHJlZ2V4fAAX1LXfx1evi-Jo'; clc.load(); });
+                            
+Linked
+95
+What does the regex \S mean in JavaScript?
+41
+What's the meaning of /gi in a regex?
+12
+Regex Explanation ^.*$
+8
+Understanding Perl regular expression modifers /m and /s
+6
+What does (?i) and ?@ in this regex mean
+-3
+What does the regular expression ^(\d{1,2})$ mean?
+5
+The meaning of \\1* operator in Java regexes
+2
+Meaning of regular expressions like - \\d , \\D, ^ , $ etc
+3
+What does regex pattern “[\\P{L}]+” mean in Java?
+3
+Is there a difference between \d and \d+?
+ 
+see more linked questions…
+Related
+545Match all occurrences of a regex853A comprehensive regex for phone number validation19Practicing regex512How to negate specific word in regex?1324RegEx match open tags except XHTML self-contained tags392What do 'lazy' and 'greedy' mean in the context of regular expressions?1461What is a non-capturing group? What does (?:) do?89How can we match a^n b^n with Java regex?21How does this Java regex detect palindromes?19List of all regex implementations?
+
+            Hot Network Questions
+        
+
+                    How could the ideal gas law be discovered from experiments on real gases?
+                
+
+                    What does the US have to gain by other countries not being authoritarian?
+                
+
+                    Using python in field calculator to extract highest value from 3 columns
+                
+
+                    Why are right-wing politicians in the US typically pro-Israel?
+                
+
+                    Why bother programming facial expressions for artificial intelligence if humans are bad at recognising them?
+                
+
+                    How to convince HR to let my star employee work from home?
+                
+
+                    Was my approach to repairing stripped holes in a door jamb appropriate?
+                
+
+                    An undergraduate said they may hire a freelancer to do their work for them. What should I do?
+                
+
+                    Get key/value pair from Firebase response nested JSON object
+                
+
+                    I got refused twice for B1 Visa, is it okay to apply once again?
+                
+
+                    How could a time traveler have prevented climate change
+                
+
+                    What was the last message to Opportunity today (13 Feb '19)?
+                
+
+                    How to save frequently used URL for access via terminal?
+                
+
+                    Would a journal paying money for reviews, with open access and ad-based revenue, work?
+                
+
+                    How to define multiple functions in the same diagram?
+                
+
+                    Why do people specify date as an option for \usepackage?
+                
+
+                    Is the Buddhist path one of 'selfless offering' or 'inner kindness'?
+                
+
+                    Necromancer PC Insisting On "Disguising" Undead Minions
+                
+
+                    Is it possible for a swallowed caster to cast Fireball outside of a Giant Toad?
+                
+
+                    Is it bad to have index space larger than data space?
+                
+
+                    Why use odd time signatures?
+                
+
+                    "What would you with the king?" -From the book "Eats, Shoots and Leaves"
+                
+
+                    Has there been a Superhero Musical Movie?
+                
+
+                    Rectangles in a chess board
+                
+
+            more hot questions
+        
+StackExchange.ready(function(){$.get('/posts/22937618/ivc/4046');});
+default
+Stack Overflow
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Products
+Teams
+Talent
+Engagement
+Enterprise
+Company
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+Stack Exchange Network
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Stack Overflow
+Server Fault
+Super User
+Web Applications
+Ask Ubuntu
+Webmasters
+Game Development
+TeX - LaTeX
+Software Engineering
+Unix & Linux
+Ask Different (Apple)
+WordPress Development
+Geographic Information Systems
+Electrical Engineering
+Android Enthusiasts
+Information Security
+Database Administrators
+Drupal Answers
+SharePoint
+User Experience
+Mathematica
+Salesforce
+ExpressionEngine® Answers
+Stack Overflow em Português
+Blender
+Network Engineering
+Cryptography
+Code Review
+Magento
+Software Recommendations
+Signal Processing
+Emacs
+Raspberry Pi
+Stack Overflow на русском
+Programming Puzzles & Code Golf
+Stack Overflow en español
+Ethereum
+Data Science
+Arduino
+Bitcoin
+
+                            more (30)
+                        
+Photography
+Science Fiction & Fantasy
+Graphic Design
+Movies & TV
+Music: Practice & Theory
+Worldbuilding
+Seasoned Advice (cooking)
+Home Improvement
+Personal Finance & Money
+Academia
+Law
+
+                            more (15)
+                        
+English Language & Usage
+Skeptics
+Mi Yodeya (Judaism)
+Travel
+Christianity
+English Language Learners
+Japanese Language
+Arqade (gaming)
+Bicycles
+Role-playing Games
+Anime & Manga
+Puzzling
+Motor Vehicle Maintenance & Repair
+
+                            more (33)
+                        
+MathOverflow
+Mathematics
+Cross Validated (stats)
+Theoretical Computer Science
+Physics
+Chemistry
+Biology
+Computer Science
+Philosophy
+
+                            more (10)
+                        
+Meta Stack Exchange
+Stack Apps
+API
+Data
+Area 51
+Blog
+Facebook
+Twitter
+LinkedIn
+
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0
+                            with attribution required.
+                    rev 2019.2.13.32891
+StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })
+Stack Overflow works best with JavaScript enabled
+            
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ]
+                });
+
+
+
+                    StackExchange.ga.setDimension('dimension2', '|regex|');
+
+                    StackExchange.ga.setDimension('dimension3', 'Questions/Show');
+
+
+                StackExchange.ga.trackPageView();
+            });
+            
+/**/
+            
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+

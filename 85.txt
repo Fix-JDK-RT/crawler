@@ -1,0 +1,740 @@
+Stack Overflow
+Log In
+Sign Up
+current community
+
+            Stack Overflow
+        
+help
+chat
+
+            Meta Stack Overflow
+        
+
+your communities            
+Sign up or log in to customize your list.
+                
+more stack exchange communities
+company blog
+
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+ 
+
+Home        
+Public
+ Stack Overflow
+
+Tags        
+
+Users        
+
+Jobs        
+
+                                            Teams
+                                        
+Create Team
+Q&A for work. A dedicated place to share your team’s knowledge.
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+.everyoneloves__top-leaderboard:empty,.everyoneloves__mid-leaderboard:empty,.everyoneloves__bot-mid-leaderboard:empty{                height:90px;width:728px;box-sizing:border-box;
+}
+ 
+What is the difference between i++ and ++i? [duplicate]
+
+            Ask Question
+        
+180
+105
+This question already has an answer here:
+Difference between i++ and ++i in a loop?
+
+                    21 answers
+                
+I've seen them both being used in numerous pieces of C# code, and I'd like to know when to use i++ or ++i (i being a number variable like int, float, double, etc). Anyone who knows this?
+c#
+share|improve this question
+edited Feb 20 '12 at 14:16
+H.B.
+121k22242322
+ 
+
+        asked Jul 27 '10 at 18:01
+DlaorDlaor
+1,1843813
+ marked as duplicate by nawfal, Tanner, DNA, Martin Tournoij, Lee Taylor Jul 21 '14 at 0:35
+This question has been asked before and already has an answer. If those answers do not fully address your question, please ask a new question.
+11
+Except where it makes no difference whatsoever, you should never use either one, because it's just going to cause people to ask the same question you're asking now. "Don't make me think" applies to code as well as design.
+                
+                    – Instance Hunter
+Jul 27 '10 at 19:49
+3
+Soooo many duplicates: stackoverflow.com/questions/467322/…, stackoverflow.com/questions/484462/…, stackoverflow.com/questions/1678519/difference-between-i-and-i, etc.
+                
+                    – gnovice
+Jul 28 '10 at 2:45
+2
+@Dlaor: Did you even read the links in my comment? The first one is about C#, and the second one is language-agnostic with an accepted answer that focuses on C#.
+                
+                    – gnovice
+Jul 28 '10 at 14:01
+5
+@gnovice, the first one asks about performance difference while I asked about the actual code-wise difference, the second is about the difference in a loop while I asked the difference in general, and the third is about C++.
+                
+                    – Dlaor
+Jul 28 '10 at 14:38
+1
+I believe this is not a duplicate of Difference between i++ and ++i in a loop? - as Dloar says in his comment above the other question asks specifically about usage within a loop.
+                
+                    – chue x
+Jul 23 '14 at 23:57
+ | 
+show 2 more comments
+ 
+
+                                6 Answers
+                            6
+
+            active
+
+            oldest
+
+            votes
+170
+Oddly it looks like the other two answers don't spell it out, and it's definitely worth saying:
+i++ means 'tell me the value of i, then increment'
+++i means 'increment i, then tell me the value'
+They are Pre-increment, post-increment operators.  In both cases the variable is incremented, but if you were to take the value of both expressions in exactly the same cases, the result will differ.
+share|improve this answer 
+edited Apr 12 '13 at 14:13
+LarsTech
+70k12106158
+ 
+
+        answered Jul 27 '10 at 18:22
+Kieren JohnstoneKieren Johnstone
+31.9k972120
+9
+This seems to be at odds with what Eric is saying
+                
+                    – Evan Carroll
+Jul 27 '10 at 18:43
+64
+Neither statement is correct. Consider your first statement. i++ actually means "save the value, increment it, store it in i, then tell me the original saved value". That is, the telling happens after the incrementing, not before as you have stated it. Consider the second statement. i++ actually means "save the value, increment it, store it in i, and tell me the incremented value". The way you said it makes it unclear whether the value is the value of i, or the value that was assigned to i; they could be different.
+                
+                    – Eric Lippert
+Jul 27 '10 at 18:43
+7
+@Eric, it would seem to me with even your answer, the second statement is categorically correct. Though he excludes a few steps.
+                
+                    – Evan Carroll
+Jul 27 '10 at 18:47
+20
+Sure, most of the time the sloppy, incorrect ways of describing the operational semantics give the same results as the precise and correct description. First, I don't see any compelling value in getting the right answers through incorrect reasoning, and second, yes, I have seen production code that gets exactly this sort of thing wrong. I get probably half a dozen questions a year from real programmers about why some particular expression chock-full of increments and decrements and array dereferences doesn't work the way they assumed it did.
+                
+                    – Eric Lippert
+Jul 27 '10 at 18:56
+12
+@supercat: The discussion is about C#, not C.
+                
+                    – Thanatos
+Jul 27 '10 at 22:57
+ | 
+show 24 more comments
+ 
+397
+The typical answer to this question, unfortunately posted here already, is that one does the increment "before" remaining operations and the other does the increment "after" remaining operations. Though that intuitively gets the idea across, that statement is on the face of it completely wrong.  The sequence of events in time is extremely well-defined in C#, and it is emphatically not the case that the prefix and postfix versions of ++ do things in a different order with respect to other operations.
+It is unsurprising that you'll see a lot of wrong answers to this question. A great many "teach yourself C#" books also get it wrong. Also, the way C# does it is different than how C does it. Many people reason as though C# and C are the same language; they are not. The design of the increment and decrement operators in C# in my opinion avoids  the design flaws of these operators in C.
+There are two questions that must be answered to determine what exactly the operation of prefix and postfix ++ are in C#. The first question is what is the result? and the second question is when does the side effect of the increment take place? 
+It is not obvious what the answer to either question is, but it is actually quite simple once you see it. Let me spell out for you precisely what x++ and ++x do for a variable x.  
+For the prefix form:
+x is evaluated to produce the variable
+The value of the variable is copied to a temporary location
+The temporary value is incremented to produce a new value (not overwriting the temporary!)
+The new value is stored in the variable
+The result of the operation is the new value (i.e. the incremented value of the temporary)
+For the postfix form:
+x is evaluated to produce the variable
+The value of the variable is copied to a temporary location
+The temporary value is incremented to produce a new value (not overwriting the temporary!)
+The new value is stored in the variable
+The result of the operation is the value of the temporary
+Some things to notice:
+First, the order of events in time is exactly the same in both cases. Again, it is absolutely not the case that the order of events in time changes between prefix and postfix. It is entirely false to say that the evaluation happens before other evaluations or after other evaluations. The evaluations happen in exactly the same order in both cases as you can see by steps 1 through 4 being identical. The only difference is the last step - whether the result is the value of the temporary, or the new, incremented value.
+You can easily demonstrate this with a simple C# console app:
+public class Application
+{
+    public static int currentValue = 0;
+    public static void Main()
+    {
+        Console.WriteLine("Test 1: ++x");
+        (++currentValue).TestMethod();
+        Console.WriteLine("\nTest 2: x++");
+        (currentValue++).TestMethod();
+        Console.WriteLine("\nTest 3: ++x");
+        (++currentValue).TestMethod();
+        Console.ReadKey();
+    }
+}
+public static class ExtensionMethods 
+{
+    public static void TestMethod(this int passedInValue) 
+    {
+        Console.WriteLine("Current:{0} Passed-in:{1}",
+            Application.currentValue,
+            passedInValue);
+    }
+}
+Here are the results...
+Test 1: ++x
+Current:1 Passed-in:1
+Test 2: x++
+Current:2 Passed-in:1
+Test 3: ++x
+Current:3 Passed-in:3
+In the first test, you can see that both currentValue and what was passed in to the TestMethod() extension show the same value, as expected.
+However, in the second case, people will try to tell you that the increment of currentValue happens after the call to TestMethod(), but as you can see from the results, it happens before the call as indicated by the 'Current:2' result.
+In this case, first the value of currentValue is stored in a temporary. Next, an incremented version of that value is stored back in currentValue but without touching the temporary which still stores the original value. Finally that temporary is passed to TestMethod().  If the increment happened after the call to TestMethod() then it would write out the same, non-incremented value twice, but it does not.
+It's important to note that the value returned from both the currentValue++ and ++currentValue operations are based on the temporary and not the actual value stored in the variable at the time either operation exits.
+Recall in the order of operations above, the first two steps copy the then-current value of the variable into the temporary.  That is what's used to calculate the return value; in the case of the prefix version, it's that temporary value incremented while in the case of the suffix version, it's that value directly/non-incremented. The variable itself is not read again after the initial storage into the temporary.
+Put more simply, the postfix version returns the value that was read from the variable (i.e. the value of the temporary) while the prefix version returns the value that was written back to the variable (i.e. the incremented value of the temporary).  Neither return the variable's value.
+This is important to understand because the variable itself could be volatile and have changed on another thread which means the return value of those operations could differ from the current value stored in the variable.
+It is surprisingly common for people to get very confused about precedence, associativity, and the order in which side effects are executed, I suspect mostly because it is so confusing in C.  C# has been carefully designed to be less confusing in all these regards. For some additional analysis of these issues, including me further demonstrating the falsity of the idea that prefix and postfix operations "move stuff around in time" see:
+http://blogs.msdn.com/b/ericlippert/archive/2009/08/10/precedence-vs-order-redux.aspx
+which led to this SO question:
+int[] arr={0}; int value = arr[arr[0]++]; Value = 1?
+You might also be interested in my previous articles on the subject:
+http://blogs.msdn.com/b/ericlippert/archive/2008/05/23/precedence-vs-associativity-vs-order.aspx
+and
+http://blogs.msdn.com/b/ericlippert/archive/2007/08/14/c-and-the-pit-of-despair.aspx
+and an interesting case where C makes it hard to reason about correctness:
+http://blogs.msdn.com/b/ericlippert/archive/2005/04/28/bad-recursion-revisited.aspx
+Also, we run into similar subtle issues when considering other operations that have side effects, such as chained simple assignments:
+http://blogs.msdn.com/b/ericlippert/archive/2010/02/11/chaining-simple-assignments-is-not-so-simple.aspx
+And here's an interesting post on why the increment operators result in values in C# rather than in variables:
+Why can't I do ++i++ in C-like languages?
+share|improve this answer 
+edited May 23 '17 at 11:47
+Community♦
+11
+ 
+
+        answered Jul 27 '10 at 18:33
+Eric LippertEric Lippert
+540k14610581941
+4
++1:  For the truly curious, could you give a reference as to what you mean by the "design flaws of these operations in C"?
+                
+                    – Justin Ardini
+Jul 27 '10 at 18:38
+20
+@Justin: I've added some links. But basically: in C, you have no guarantees whatsoever about what order things happen in time. A conforming compiler can do any damn thing it pleases when there are two mutations in the same sequence point, and need never tell you that you're doing something that is implementation-defined behaviour. This leads people to write dangerously nonportable code that works on some compilers and does something completely different on others.
+                
+                    – Eric Lippert
+Jul 27 '10 at 18:40
+14
+I must say that for the really curious, this is good knowledge, but for the average C# application, the difference between the wording in the other answers and the actual stuff going on is so far below the abstraction level of the language that it really makes no difference. C# is not assembler, and out of 99.9% of the times i++ or ++i are used in code, the things going on in the background are just that; in the background. I write C# to climb to abstraction levels above what's going on on this level, so if this really matters for your C# code, you might already be in the wrong language.
+                
+                    – Tomas Aschan
+Jul 27 '10 at 21:39
+23
+@Tomas: First off, I am concerned about all C# applications, not merely the mass of average applications. The number of non-average applications is large. Second, it makes no difference except in the cases where it makes a difference. I get questions about this stuff based on real bugs in real code probably half a dozen times a year. Third, I agree with your larger point; the whole idea of ++ is a very low-level idea that looks very quaint in modern code. It's really only there because it is idiomatic for C-like languages to have such an operator.
+                
+                    – Eric Lippert
+Jul 27 '10 at 21:49
+10
++1 but I have to tell the truth... It's years and years that the only use of postfix operators I do that is not alone in the row (so that isn't i++;) is in for (int i = 0; i < x; i++)... And I'm very very happy of this! (and I don't ever ever use the prefix operator). If I have to write something that will require a senior programmer 2 minutes to decipher... Well... It's better to write one more line of code or introduce a temporary variable :-) I think that your "article" (I won't call it "answer") vindicates my choice :-)
+                
+                    – xanatos
+Oct 18 '11 at 19:09
+ | 
+show 7 more comments
+ 
+19
+If you have:
+int i = 10;
+int x = ++i;
+then x will be 11.
+But if you have:
+int i = 10;
+int x = i++;
+then x will be 10.
+Note as Eric points out, the increment occurs at the same time in both cases, but it's what value is given as the result that differs (thanks Eric!).
+Generally, I like to use ++i unless there's a good reason not to. For example, when writing a loop, I like to use:
+for (int i = 0; i < 10; ++i) {
+}
+Or, if I just need to increment a variable, I like to use:
+++x;
+Normally, one way or the other doesn't have much significance and comes down to coding style, but if you are using the operators inside other assignments (like in my original examples), it's important to be aware of potential side effects.
+share|improve this answer 
+edited Jul 27 '10 at 18:23
+ 
+
+        answered Jul 27 '10 at 18:03
+dcpdcp
+43k16119147
+2
+You could probably clarify your examples by putting the code lines in order - that is, say "var x = 10; var y = ++x;" and "var x = 10; var y = x++;" instead.
+                
+                    – Tomas Aschan
+Jul 27 '10 at 18:04
+20
+This answer is dangerously wrong. When the increment happens does not change with respect to the remaining operations so saying that in one case it is done before remaining operations and in the other case it is done after remaining operations is deeply misleading. The increment is done at the same time in both cases. The thing that is different is what value is given as the result, not when the increment is done.
+                
+                    – Eric Lippert
+Jul 27 '10 at 18:16
+3
+I have edited this to use i for the variable name rather than var as it is a C# keyword.
+                
+                    – Jeff Yates
+Jul 27 '10 at 18:18
+2
+So without assigning variables and just stating "i++;" or "++i;" will give exactly the same results or am I getting it wrong?
+                
+                    – Dlaor
+Jul 27 '10 at 18:26
+1
+@Eric: Could you clarify why the original wording is "dangerous"?  It does lead to correct usage, even if it the details are wrong.
+                
+                    – Justin Ardini
+Jul 27 '10 at 18:28
+ | 
+show 8 more comments
+ 
+5
+int i = 0;
+Console.WriteLine(i++); // Prints 0. Then value of "i" becomes 1.
+Console.WriteLine(--i); // Value of "i" becomes 0. Then prints 0.
+Does this answer your question ?
+share|improve this answer 
+edited Apr 19 '14 at 5:36
+hims056
+23.1k2289117
+ 
+
+        answered Jul 27 '10 at 18:05
+thelostthelost
+5,63832039
+4
+One could imagine that the postfix increment and the prefix decrement don't have any effect on the variable :P
+                
+                    – Andreas
+Jul 27 '10 at 18:16
+42
+This seems to be the least clear way conceivable to answer this question..
+                
+                    – Kieren Johnstone
+Jul 27 '10 at 18:29
+15
++1 for being creative. -1 for being creative.
+                
+                    – GManNickG
+Jul 27 '10 at 23:08
+5
+It looks like something similar happens to my votes: They rise and fall... and so I stick to 0 :-)
+                
+                    – thelost
+Mar 2 '11 at 21:06
+2
+Oh, that's clever!
+                
+                    – Maxpm
+Oct 24 '11 at 3:34
+ | 
+show 3 more comments
+ 
+5
+The way the operator works is that it gets incremented at the same time, but if it is before a variable, the expression will evaluate with the incremented/decremented variable:
+int x = 0;   //x is 0
+int y = ++x; //x is 1 and y is 1
+If it is after the variable the current statement will get executed with the original variable, as if it had not yet been incremented/decremented:
+int x = 0;   //x is 0
+int y = x++; //'y = x' is evaluated with x=0, but x is still incremented. So, x is 1, but y is 0
+I agree with dcp in using pre-increment/decrement (++x) unless necessary. Really the only time I use the post-increment/decrement is in while loops or loops of that sort. These loops are the same:
+while (x < 5)  //evaluates conditional statement
+{
+    //some code
+    ++x;       //increments x
+}
+or
+while (x++ < 5) //evaluates conditional statement with x value before increment, and x is incremented
+{
+    //some code
+}
+You can also do this while indexing arrays and such:
+int i = 0;
+int[] MyArray = new int[2];
+MyArray[i++] = 1234; //sets array at index 0 to '1234' and i is incremented
+MyArray[i] = 5678;   //sets array at index 1 to '5678'
+int temp = MyArray[--i]; //temp is 1234 (becasue of pre-decrement);
+Etc, etc...
+share|improve this answer 
+edited Jun 8 '17 at 9:54
+AGuyCalledGerald
+4,5721454101
+ 
+
+        answered Jul 27 '10 at 18:25
+Mike WebbMike Webb
+5,1801667103
+Mike, you said 'before anything else' - that's not accurate, it's just before the increment expression is evaluated.
+                
+                    – Kieren Johnstone
+Jul 27 '10 at 18:26
+@Kieren Johnstone: Should be fixed now. Thanks for the catch.
+                
+                    – Mike Webb
+Jul 27 '10 at 18:30
+Also, corrected some of the erroneous statements
+                
+                    – Mike Webb
+Jul 27 '10 at 18:38
++1 for showing the values to both variables.
+                
+                    – Vaccano
+Jan 5 '11 at 22:00
+add a comment | 
+ 
+4
+Just for the record, in C++, if you can use either (i.e.) you don't care about the ordering of operations (you just want to increment or decrement and use it later) the prefix operator is more efficient since it doesn't have to create a temporary copy of the object. Unfortunately, most people use posfix (var++) instead of prefix (++var), just because that is what we learned initially. (I was asked about this in an interview). Not sure if this is true in C#, but I assume it would be.
+share|improve this answer 
+
+        answered Jul 27 '10 at 22:43
+DevinEllingsonDevinEllingson
+1112
+2
+That's why I use ++i in c# to when used alone (ie. not in a bigger expression). Whenever I see a c# loop with i++, I weep a little, but now that I know that in c# this is actually pretty much the same code I feel better. Personally I'll still use ++i because habits die hard.
+                
+                    – Mikle
+Jun 23 '11 at 15:16
+add a comment | 
+ 
+
+Not the answer you're looking for?                            Browse other questions tagged c#  or ask your own question.                        
+asked
+8 years, 6 months ago
+viewed
+80,801 times
+active
+1 year, 8 months ago
+;try{(function(a){function b(a){return'string'==typeof a?document.getElementById(a):a}function c(a){return a=b(a),!!a&&'none'===getComputedStyle(a).display}function d(a){return!c(a)}function e(a){return!!a}function f(a){return /^\s*$/.test(b(a).innerHTML)}function g(a){var b=a.style;b.height=b.maxHeight=b.minHeight='auto',b.display='none',[].forEach.call(a.children,g)}function h(a,b){var c;return function(){return a&&(c=a.call(b||this,arguments),a=null),c}}function i(a){var b=document.createElement('script');b.src=a,document.body.appendChild(b)}function j(a){return k([],a)}function k(a,b){return a.push=function(a){return b(),delete this.push,this.push(a)},a}function l(){try{return!new Function('return async()=>{};')}catch(a){return!0}}function m(){return'undefined'!=typeof googletag&&!!googletag.apiReady}function n(){m()||(googletag={cmd:j(A)})}function o(){var a=document.createElement('div');a.className='adsbox',a.id='clc-abd',a.style.position='absolute',a.style.pointerEvents='none',a.innerHTML='&nbsp;',document.body.appendChild(a)}function p(a){var b=a.serviceName,c=a.slot,d=a.lineItemId;try{var e=c.getSlotElementId(),f=[];e||f.push('id=0');var h=document.getElementById(e);if(!e||h?h.hasAttribute('data-clc-stalled')&&f.push('st=1'):f.push('el=0'),0!==f.length)return void B(f.join('&'));-1===x.dh.indexOf(d)?h.setAttribute('data-clc-prefilled','true'):g(h),h.setAttribute('data-clc-ready','true')}catch(a){var i=document.querySelector('#dfp-tsb, #dfp-isb, #clc-tsb');i&&i.setAttribute('data-clc-ready','true'),B('e=1')}}function q(){return Object.keys(F.ids)}function r(a){var b=F.ids[a],c=F.slots[b];'function'==typeof c&&(c=c(a));return{path:'/'+C+'/'+E+'/'+b+'/'+D,sizes:c,zone:b}}function s(a){return!(clc.collapse&&void 0!==clc.collapse[a])||!!clc.collapse[a]}function t(a,b){'dfp-isb'===a&&b.setTargeting('Sidebar',['Inline']),'dfp-tsb'===a&&b.setTargeting('Sidebar',['Right']);var c=r(a),d=c.path,e=c.sizes,f=c.zone,g=googletag.defineSlot(d,e,a);s(f)&&g.setCollapseEmptyDiv(!0,!0),g.addService(b),!1}function u(b){var c=a.dfp&&a.dfp.targeting||{};Object.keys(c).forEach(function(a){b.setTargeting(a,c[a])})}function v(a){var g=a.map(b).filter(e);return{eligible:g.filter(f).filter(d).map(function(a){return a.id}),ineligible:g.filter(c)}}function w(b){if(void 0===b&&(b=q()),!m())return n(),void googletag.cmd.push(function(){return w(b)});var c=v(b),d=c.eligible,e=c.ineligible;if(e.forEach(g),0!==d.length){o(),googletag.destroySlots();var f=googletag.pubads();f.enableSingleRequest(),a.sreEvent||(f.addEventListener('slotRenderEnded',p),a.sreEvent=!0),u(f),d.forEach(function(a){return t(a,f)}),googletag.enableServices(),d.forEach(function(a){googletag.display(a)})}}var x=function(a){for(var b=[],c=1;c<arguments.length;c++)b[c-1]=arguments[c];for(var d,e=0,f=b;e<f.length;e++)for(var g in d=f[e],d)a[g]=d[g];return a}({"lib":"https://cdn.sstatic.net/clc/clc.min.js?v=d926a9d0eedc","style":"https://cdn.sstatic.net/clc/styles/clc.min.css?v=768595a6d237","u":"https://clc.stackoverflow.com/markup.js","wa":true,"kt":2000,"tto":true,"h":"clc.stackoverflow.com","allowed":"^(((talent\\.)?stackoverflow)|(blog\\.codinghorror)|(serverfault|askubuntu)|([^\\.]+\\.stackexchange))\\.com$","wv":true,"al":false,"dh":[4385506061,4386578282,4386579572]},a.options||{}),y=h(function(){var a=x.lib;l()&&(a=a.replace(/(\.min)?\.js(\?v=[0-9a-fA-F]+)?$/,'.ie$1.js$2')),i(a)}),z=a.cmd||[];Array.isArray(z)&&(0<z.length?y():k(z,y));var A=h(function(){i('https://www.googletagservices.com/tag/js/gpt.js')}),B=function(a){new Image().src='https://'+x.h+'/stalled.gif?'+a},C='248424177',D=/^\/tags\//.test(location.pathname)||/^\/questions\/tagged\//.test(location.pathname)?'tag-pages':'question-pages',E=location.hostname;var F={slots:{lb:[[728,90]],mlb:[[728,90]],smlb:[[728,90]],bmlb:[[728,90]],sb:function(a){return'dfp-tsb'===a?[[300,250],[300,600]]:[[300,250]]},"tag-sponsorship":[[730,135]],"mobile-below-question":[[320,50],[300,250]]},ids:{"dfp-tlb":'lb',"dfp-mlb":'mlb',"dfp-smlb":'smlb',"dfp-bmlb":'bmlb',"dfp-tsb":'sb',"dfp-isb":'sb',"dfp-tag":'tag-sponsorship',"dfp-m-aq":'mobile-below-question',"clc-tlb":'lb',"clc-mlb":'mlb',"clc-smlb":'smlb',"clc-bmlb":'bmlb',"clc-tsb":'sb'}};(function(){var b=x.al;b&&z.push(function(){return a.load()})})(),n(),a.dfp={load:w},a.options=x,a.cmd=z})(this.clc=this.clc||{})}catch(a){window.console.error(a)} 
+                var clc = clc || {};
+                clc.collapse = { sb: !0,'tag-sponsorship':!0,lb:!1,mlb:!1,smlb:!1,bmlb:!1,'mobile-below-question':!0};
+                clc.cmd = clc.cmd || [];
+                clc.cmd.push(function () { window.clc_request='AirOeONcktYIAAAAABIQMwACAAAAAgAAAAAEAAAAfGMjfACm_nbKzM6kBvyg'; clc.load(); });
+                                clc.dfp = clc.dfp || {};
+                clc.dfp.targeting = {Registered:['false'],'so-tag':['c_sharp']};
+                
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                googletag.cmd.push(function () { clc.dfp.load(); });
+            
+Linked
+260
+Difference between i++ and ++i in a loop?
+4
+C# in a nutshell example misunderstanding ++ unary operator increment
+1
+count++ and ++count, when to use which?
+0
+Can someone explain the ++ operator?
+-1
+Different between x++ and ++x
+0
+Clarification on JavaScript operator precedence when assigning and incrementing values
+-3
+Increment Operator Magic in C#
+1
+Unary Prefix Increment ++ Operator Different Outputs
+0
+Visual Basic C# output is unexpected
+0
+Why does incrementation take place after setter in this example?
+ 
+see more linked questions…
+Related
+5746What is the difference between String and string in C#?1476Hidden Features of C#?1109What is the difference between const and readonly?2158What is the best way to iterate over a dictionary?2234What are the correct version numbers for C#?909What is the difference between a field and a property?1405What is the difference between an abstract function and a virtual function?1474Proper use of the IDisposable interface1877What is a NullReferenceException, and how do I fix it?1119Why not inherit from List<T>?
+
+            Hot Network Questions
+        
+
+                    An undergraduate said they may hire a freelancer to do their work for them. What should I do?
+                
+
+                    Is the "hot network questions" element on Stack Overflow a dark pattern?
+                
+
+                    How did the 8086 interface with the 8087 FPU coprocessor?
+                
+
+                    Lying is illegal. How to make joking not an offence?
+                
+
+                    Downsides of showing email address on Android lock screen
+                
+
+                    Add option for custom select attribute on customer edit page Magento 2
+                
+
+                    Looking for where I went wrong: Finding the volume of a solid that lies within both a cylinder and sphere
+                
+
+                    How to calculate the price for acquisition of a mobile game
+                
+
+                    Does Warlock's Eyes of the Rune Keeper allow them to read Druidic?
+                
+
+                    How to indicate obscurity in a translated quotation?
+                
+
+                    What happened to Apollo 13 LM descent stage?
+                
+
+                    Which Airport am I going to be at in Iceland if my ticket says Reykjavik Keflavik Iceland
+                
+
+                    Ragged Transpose
+                
+
+                    Why bother programming facial expressions for artificial intelligence if humans are bad at recognising them?
+                
+
+                    Numbers in parentheses in financial statements?
+                
+
+                    The 465 Arrangement
+                
+
+                    Orienting oneself after arriving after exiting an underground station
+                
+
+                    What low-level arcane spells are directly relevant to combat where my spellcasting ability score doesn't matter?
+                
+
+                    Is single quote filtering nonsense?
+                
+
+                    Why was I quizzed about my activities in Colombia by the air-line staff prior to check-in?
+                
+
+                    Was my approach to repairing stripped holes in a door jamb appropriate?
+                
+
+                    What was the first science fiction story set to the future without bothering about the present?
+                
+
+                    Were there no "white" people in Virginia between 1619 and 1679?
+                
+
+                    Can a malware power on a computer?
+                
+
+            more hot questions
+        
+StackExchange.ready(function(){$.get('/posts/3346450/ivc/4046');});
+lang-cs
+Stack Overflow
+Questions
+Jobs
+Developer Jobs Directory
+Salary Calculator
+Help
+Mobile
+Products
+Teams
+Talent
+Engagement
+Enterprise
+Company
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Contact Us
+Stack Exchange Network
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Stack Overflow
+Server Fault
+Super User
+Web Applications
+Ask Ubuntu
+Webmasters
+Game Development
+TeX - LaTeX
+Software Engineering
+Unix & Linux
+Ask Different (Apple)
+WordPress Development
+Geographic Information Systems
+Electrical Engineering
+Android Enthusiasts
+Information Security
+Database Administrators
+Drupal Answers
+SharePoint
+User Experience
+Mathematica
+Salesforce
+ExpressionEngine® Answers
+Stack Overflow em Português
+Blender
+Network Engineering
+Cryptography
+Code Review
+Magento
+Software Recommendations
+Signal Processing
+Emacs
+Raspberry Pi
+Stack Overflow на русском
+Programming Puzzles & Code Golf
+Stack Overflow en español
+Ethereum
+Data Science
+Arduino
+Bitcoin
+
+                            more (30)
+                        
+Photography
+Science Fiction & Fantasy
+Graphic Design
+Movies & TV
+Music: Practice & Theory
+Worldbuilding
+Seasoned Advice (cooking)
+Home Improvement
+Personal Finance & Money
+Academia
+Law
+
+                            more (15)
+                        
+English Language & Usage
+Skeptics
+Mi Yodeya (Judaism)
+Travel
+Christianity
+English Language Learners
+Japanese Language
+Arqade (gaming)
+Bicycles
+Role-playing Games
+Anime & Manga
+Puzzling
+Motor Vehicle Maintenance & Repair
+
+                            more (33)
+                        
+MathOverflow
+Mathematics
+Cross Validated (stats)
+Theoretical Computer Science
+Physics
+Chemistry
+Biology
+Computer Science
+Philosophy
+
+                            more (10)
+                        
+Meta Stack Exchange
+Stack Apps
+API
+Data
+Area 51
+Blog
+Facebook
+Twitter
+LinkedIn
+
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0
+                            with attribution required.
+                    rev 2019.2.13.32891
+StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })
+Stack Overflow works best with JavaScript enabled
+            
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ]
+                });
+
+
+
+                    StackExchange.ga.setDimension('dimension2', '|c#|');
+
+                    StackExchange.ga.setDimension('dimension3', 'Questions/Show');
+
+
+                StackExchange.ga.trackPageView();
+            });
+            
+/**/
+            
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+
